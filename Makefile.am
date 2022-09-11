@@ -171,16 +171,6 @@ libbluray_la_SOURCES += \
 libbluray_la_SOURCES += \
 	src/libbluray/disc/udf_fs.h \
 	src/libbluray/disc/udf_fs.c
-if !HAVE_LIBUDFREAD
-libbluray_la_SOURCES += \
-	contrib/libudfread/src/blockinput.h \
-	contrib/libudfread/src/default_blockinput.h \
-	contrib/libudfread/src/default_blockinput.c \
-	contrib/libudfread/src/ecma167.h \
-	contrib/libudfread/src/ecma167.c \
-	contrib/libudfread/src/udfread.h \
-	contrib/libudfread/src/udfread.c
-endif
 
 if HAVE_DARWIN
 libbluray_la_SOURCES+= \
